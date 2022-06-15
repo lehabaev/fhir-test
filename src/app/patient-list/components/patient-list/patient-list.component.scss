@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+app-patient-card, .skeleton {
+  margin-bottom: 20px;
+}
+
+.skeleton {
+  width: 100%;
+  display: block;
+  min-width: 400px;
+}

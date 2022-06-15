@@ -1,0 +1,11 @@
+<ng-container *ngIf="loading">
+  <p-card class="skeleton">
+    <p-skeleton width="100%" height="1.5rem"></p-skeleton> <br>
+    <p-skeleton width="75%" height="1rem"></p-skeleton><br>
+    <p-skeleton width="50%" height="1rem"></p-skeleton><br>
+    <p-skeleton width="75%" height="1rem"></p-skeleton>
+  </p-card>
+</ng-container>
+
+<app-patient-card [item]="item" *ngFor="let item of patientList"></app-patient-card>
+

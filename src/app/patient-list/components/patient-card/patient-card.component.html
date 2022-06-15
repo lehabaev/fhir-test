@@ -1,0 +1,11 @@
+<p-card [header]="item.patient.name" >
+    Дата рождения: {{ item.patient.birthDate | date: 'd LLLL yyyy' }} <br>
+    Пол: {{ item.patient.gender }}<br>
+    Записей на прием: {{ item.appointments.length }}
+
+    <ng-template pTemplate="footer">
+        <div class="appointment" *ngFor="let appointment of item.appointments">
+          {{ appointment.start | date: 'd LLLL yyyy HH:mm' }} - {{ appointment.description }}
+        </div>
+    </ng-template>
+</p-card>
